@@ -1,6 +1,12 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
     return (
-        <div>Header Component</div>
+        <React.Fragment>
+            <Link to='/home'>Home</Link>
+            <Link to='/about'>About</Link>
+        </React.Fragment>
     )
 }
 

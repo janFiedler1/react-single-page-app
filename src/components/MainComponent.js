@@ -4,7 +4,7 @@ import Footer from './FooterComponent'
 import About from './AboutComponent';
 import Home from './HomeComponent';
 
-import {Routes, Route, Redirect} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 
 import withRouter from '../react-router-dom/withRouter'
 
@@ -15,10 +15,14 @@ function Main (){
             <Routes>
                 <Route path='/home' Component={Home}/>
                 <Route path='/about' Component={About}/>
+                
             </Routes>
+            
             <Footer/>
         </React.Fragment>
     )
 }
 
 export default withRouter(Main)
+
+//<Navigate to='/home'/>
