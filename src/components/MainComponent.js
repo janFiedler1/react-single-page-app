@@ -3,6 +3,7 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent'
 import About from './AboutComponent';
 import Home from './HomeComponent';
+import Contact from './ContactComponent';
 
 import {Routes, Route, Navigate} from 'react-router-dom';
 
@@ -15,7 +16,7 @@ function Main (){
             <Routes>
                 <Route path='/home' Component={Home}/>
                 <Route path='/about' Component={About}/>
-                
+                <Route path='/contact' Component={Contact}/>
             </Routes>
             
             <Footer/>
