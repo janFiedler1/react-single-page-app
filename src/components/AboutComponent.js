@@ -2,7 +2,7 @@ import React from "react";
 
 function About () {
     return (
-        <div>About</div>
+        <img src={process.env.PUBLIC_URL+'/natural-instinct.jpg'}/>
     )
 }
 

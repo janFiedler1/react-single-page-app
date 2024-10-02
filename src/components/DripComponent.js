@@ -5,8 +5,10 @@ import styles from '../component-css/HeaderComponent.css';
 function Header() {
     //const links = [{title: 'Home', path:"/home", icon:<HomeIcon/>}]
     const links = [{title: 'Home', path:"/home"},
+        {title: 'Home', path:"/home"},
         {title: 'About', path:"/about"},
-        {title: 'Contact', path:"/contact"}
+        {title: 'Contact', path:"/contact"},
+        {title: 'Hello', path:"/contact"}
      ]
      /*
      <Link className="nav" to='/home'>Home</Link>
