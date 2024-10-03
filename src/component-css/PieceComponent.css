@@ -1,0 +1,12 @@
+.piece-container {
+    display: flex;
+    align-items: center;
+}
+img {
+    transform: scale(0.5);
+    transition: transform 0.5s;
+}
+img:hover {
+    transform: scale(0.7);
+    transition: transform 0.5s;
+}

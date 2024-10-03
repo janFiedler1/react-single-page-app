@@ -1,11 +1,12 @@
 import React from "react";
+import Piece from './PieceComponent';
 //import myImage from 'rockets-shorts-enhanced-png.png';
 //<img src={myImage}/>
 
-const pieces = [{title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced-png.png', type: "shorts"},
-    {title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced-png.png', type: "shorts"},
-    {title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced-png.png', type: "shorts"},
-    {title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced-png.png', type: "shorts"},
+const pieces = [{id: 1, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "shorts"},
+    {id: 2, title: 'Earth First Longsleeve', path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "shorts"},
+    {id: 3, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced-png.png', type: "shorts"},
+    {id: 4, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced-png.png', type: "shorts"},
  ]
 
 function Home () {
@@ -13,13 +14,9 @@ function Home () {
         <React.Fragment>
             <div className="pieces-container">
                 {pieces.map((piece) => (
-                    <div className="piece-container">
-                        <div>{piece.title}</div>
-                        <img src={process.env.PUBLIC_URL + '/rockets-shorts-enhanced-png.png'}/>  
-                    </div>
+                    <Piece key={piece.key} title={piece.title} path={piece.path}/>
                 ))}
-            </div>
-            <img src={process.env.PUBLIC_URL + '/rockets-shorts-enhanced-png.png'}/>       
+            </div>    
         </React.Fragment>
     )
 }

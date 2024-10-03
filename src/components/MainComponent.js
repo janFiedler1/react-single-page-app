@@ -3,7 +3,8 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent'
 import About from './AboutComponent';
 import Home from './HomeComponent';
-import Contact from './ContactComponent';
+//import Contact from './ContactComponent';
+import Contact from './GeneratedContactComponent';
 
 import {Routes, Route, Navigate} from 'react-router-dom';
 

@@ -1,11 +1,9 @@
 .header {
     display: flex;
     width: 100%;
-    margin-right: 0;
-    margin-left: auto;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #dbcecefa;
+    background-color: #00000044;
     align-items: center;
   }
   
@@ -32,6 +30,6 @@
     border-radius:30px;
 }*/
   .nav:visited {
-    color: Black;
+    color: rgb(255, 255, 255);
   }
   
