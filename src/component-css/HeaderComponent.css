@@ -5,11 +5,11 @@
     padding-bottom: 1%;
     background-color: #00000044;
     align-items: center;
+    height: 74px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.02), 0 5px 12px -6px rgba(0, 0, 0, 0.1), 0 -12px 25px -19px rgba(0, 0, 0, 0.2);
   }
   
   .nav {
-    height: 00%;
-    display: flex;
     vertical-align: center;
     text-decoration: none;
     margin-left: 2%;
