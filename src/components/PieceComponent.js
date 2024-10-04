@@ -10,12 +10,12 @@ import '../component-css/PieceComponent.css';
 function Piece(prop) {
     return (
         <React.Fragment>
-            <a href={prop.payment_link}>
+            {/*<a href={prop.payment_link}>*/}
                 <div key={prop.key} className="piece-container">
-                    <div>{prop.title}</div>
+                    <div className="piece-title">{prop.title}</div>
                     <img src={prop.path}/>  
                 </div>
-            </a>
+            {/*</a>*/}
         </React.Fragment>
     )
 }

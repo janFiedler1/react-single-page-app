@@ -1,12 +1,28 @@
 .piece-container {
+    width: 100%;
+    height: 30vh;
     display: flex;
-    align-items: center;
+    align-content: space-around;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10%;
+    
+}
+.piece-title {
+    text-decoration: none;
+    align-content: center;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 img {
-    transform: scale(0.5);
-    transition: transform 0.5s;
+    height:100%;
 }
-img:hover {
-    transform: scale(0.7);
+.piece-container:hover {
+    transform: scale(1.2);
     transition: transform 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.02), 0 5px 12px -6px rgba(0, 0, 0, 0.1), 0 -12px 25px -19px rgba(0, 0, 0, 0.2);
+}
+a {
+    padding: 0%;
+
 }
