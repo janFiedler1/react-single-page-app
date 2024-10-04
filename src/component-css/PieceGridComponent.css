@@ -1,3 +1,4 @@
 .pieces-container {
-    display: grid;
+    display: block;
+    
 }

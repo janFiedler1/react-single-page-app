@@ -5,8 +5,7 @@ function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const   
- [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,10 +21,10 @@ function ContactForm() {
   return (
     <div className='contact-form'>
       {submitted ? (
-        <p>Thank you for your message!</p>
+        <p>Message sent!</p>
       ) : (
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"   
@@ -35,7 +34,7 @@ function ContactForm() {
             required
           />
 
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
@@ -44,7 +43,7 @@ function ContactForm() {
             required
           />
 
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             value={message}
