@@ -1,4 +1,13 @@
 .pieces-container {
-    display: block;
-    
+    /* display: block; */
+    columns: 2;
+    align-content: space-between;
+    margin: 5%;
+    margin-top: 90px;
 }
+
+@media screen and (max-width: 800px) {
+    .pieces-container {
+        columns: 1;
+    }
+  }

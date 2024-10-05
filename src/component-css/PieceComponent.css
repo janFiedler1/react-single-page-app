@@ -4,7 +4,7 @@
     display: flex;
     border-radius: 5px;
     text-decoration: none;
-    margin: 10%;
+    padding: 5%;
     
 }
 .piece-title {
@@ -26,5 +26,5 @@ img {
 }
 a {
     padding: 0%;
-
+    text-decoration: none;
 }

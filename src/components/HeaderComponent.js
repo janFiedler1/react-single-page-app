@@ -10,14 +10,13 @@ function Header() {
     return (
         <React.Fragment>
             <div className="header">
-                <div className="logo">
-                    <h1>Natural Instinct</h1>
-                </div>
-                <div className="navigation">
+                <h1 className="logo-word">NATURAL INSTINCT</h1>
+                <div className="navigation-menu">
                     {links.map((link) => (
-                        <Link className="nav" to={link.path}>{link.title}</Link>
+                        <Link className="navigation-item" to={link.path}>{link.title}</Link>
                     ))}
                 </div>
+                <button className="navigation-dropdown">| | |</button>
             </div>
         </React.Fragment>
     )
