@@ -1,8 +1,11 @@
 import React from "react";
+import '../component-css/PageComponent.css';
 
 function About () {
     return (
-        <img src={process.env.PUBLIC_URL+'/natural-instinct.jpg'}/>
+        <div className="page">
+            <img src={process.env.PUBLIC_URL+'/natural-instinct.jpg'}/>
+        </div>
     )
 }
 

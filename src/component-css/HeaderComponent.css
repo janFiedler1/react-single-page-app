@@ -18,11 +18,12 @@
   .navigation-menu{
     margin-right: 0;
     margin-left: auto;
+    height: 100%;
   }
 
   .navigation-dropdown {
     display: none;
-    background-color: #302f2f00;
+    background-color: inherit;
     border: none;
     outline: none;
     box-shadow: none;
@@ -32,19 +33,22 @@
   }
   
   .navigation-item {
-    justify-content: center;
-    vertical-align: center;
     text-decoration: none;
-    padding-right: 2vw;
+    padding-right: 1vw;
     padding-left: 1vw;
-    color:   
-   #ffffff;
-    text-align: center;
+    color:#ffffff;
+    height: 100%;
     font-size: large;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
   .navigation-item:hover {
     cursor: pointer;
-    color: #c22828;
+    background-color: #3a3a3abe;
+    border-radius: 2px;
+    transition: background-color 0.5s;
   }
   .navigation-item:visited {
     color: inherit;

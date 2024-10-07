@@ -9,11 +9,15 @@ function Header() {
      ]
     return (
         <React.Fragment>
-            <div className="header">
+            <div className="header sticky-header">
                 <h1 className="logo-word">NATURAL INSTINCT</h1>
                 <div className="navigation-menu">
                     {links.map((link) => (
-                        <Link className="navigation-item" to={link.path}>{link.title}</Link>
+                        <Link to={link.path}>
+                            <button className="navigation-item" >
+                                {link.title}
+                            </button>
+                        </Link>
                     ))}
                 </div>
                 <button className="navigation-dropdown">| | |</button>

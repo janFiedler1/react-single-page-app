@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../component-css/GeneratedContactComponent.css';
+import '../component-css/PageComponent.css';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -19,7 +20,7 @@ function ContactForm() {
   };
 
   return (
-    <div className='contact-form'>
+    <div className='contact-form page'>
       {submitted ? (
         <p>Message sent!</p>
       ) : (
