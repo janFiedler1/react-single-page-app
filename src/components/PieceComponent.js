@@ -12,7 +12,7 @@ function Piece(prop) {
         <React.Fragment>
             <a href={prop.payment_link}>
                 <div key={prop.key} className="piece-container">
-                    <div className="piece-title">{prop.title}</div>
+                    {/* <div className="piece-title">{prop.title}</div> */}
                     <img src={prop.path}/>  
                 </div>
             </a>
