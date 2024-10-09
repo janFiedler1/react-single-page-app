@@ -10,7 +10,9 @@ function Header() {
     return (
         <React.Fragment>
             <div className="header sticky-header">
-                <h1 className="logo-word">NATURAL INSTINCT</h1>
+                <a href="/home">
+                    <h1 className="logo-word">NATURAL INSTINCT</h1>
+                </a>
                 <div className="navigation-menu">
                     {links.map((link) => (
                         <Link to={link.path}>
