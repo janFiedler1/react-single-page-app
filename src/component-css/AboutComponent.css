@@ -1,0 +1,11 @@
+.about-section {
+    display: flex;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+.about-section img {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    height: auto;
+    max-width: height;
+}
